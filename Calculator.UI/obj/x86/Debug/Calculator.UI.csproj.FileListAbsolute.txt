@@ -1,0 +1,22 @@
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\bin\Debug\Calculator.UI.exe
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\bin\Debug\Calculator.UI.pdb
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.frmCalculator.resources
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.Properties.Resources.resources
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.exe
+c:\users\200130283\documents\visual studio 2010\Projects\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.pdb
+C:\Users\200130283\Desktop\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.exe
+C:\Users\200130283\Desktop\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.pdb
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.exe
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.pdb
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\bin\Debug\Calculator.UI.exe
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\bin\Debug\Calculator.UI.pdb
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\bin\Debug\Calculator.BL.dll
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\bin\Debug\Calculator.BL.pdb
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.frmCalculator.resources
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\obj\x86\Debug\Calculator.UI.Properties.Resources.resources
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.UI\obj\x86\Debug\GenerateResource.write.1.tlog

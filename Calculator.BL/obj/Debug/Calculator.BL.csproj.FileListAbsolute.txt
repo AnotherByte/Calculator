@@ -1,0 +1,5 @@
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.BL\bin\Debug\Calculator.BL.dll
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.BL\bin\Debug\Calculator.BL.pdb
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.BL\obj\Debug\Calculator.BL.dll
+C:\Users\Magnum\Documents\Programming - C#\Calculator\Calculator.BL\obj\Debug\Calculator.BL.pdb
