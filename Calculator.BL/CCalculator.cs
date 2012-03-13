@@ -12,6 +12,11 @@ namespace Calculator.BL
         private string msNumber = string.Empty;
         private double mdNumber;
 
+        private double mdNum1, mdNum2;
+        private char msOperator;
+
+        private bool mbFirst;
+
 
         #endregion
 
@@ -73,6 +78,27 @@ namespace Calculator.BL
 
         #endregion
 
+        public string Calc()
+        {
+            switch (msOperator)
+            {
+                case '+':
+                    mdNumber = mdNum1 + mdNum2;
+                    break;
+                case '-':
+                    mdNumber = mdNum1 - mdNum2;
+                    break;
+                case '*':
+                    mdNumber = mdNum1 * mdNum2;
+                    break;
+                case '/':
+                    mdNumber = mdNum1 / mdNum2;
+                    break;
+            }
+
+            msNumber = mdNumber.ToString();
+            return msNumber;
+        }
 
         public string Back()
         {
@@ -90,6 +116,42 @@ namespace Calculator.BL
             msNumber = string.Empty;
 
             return msNumber;
+        }
+
+
+        public string SetOperatorByLetter(char vcLetter)
+        {
+            switch (vcLetter)
+            {
+                case 'A':
+                    SetOperator('+');
+                    break;
+                case 'S':
+                    SetOperator('-');
+                    break;
+                case 'M':
+                    SetOperator('*');
+                    break;
+                case 'D':
+                    SetOperator('/');
+                    break;
+            }
+            if (mbFirst)
+            {
+                mdNum1 = mdNumber;
+            }
+            else
+            {
+                mdNum2 = mdNumber;
+            }
+            mbFirst = !mbFirst;
+
+            return msOperator.ToString();
+        }
+
+        private void SetOperator(char vcOperator)
+        {
+            msOperator = vcOperator;
         }
 
     }

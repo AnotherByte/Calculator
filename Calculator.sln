@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.UI", "Calculator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.BL", "Calculator.BL\Calculator.BL.csproj", "{BE726AB5-1A85-4D32-9FCB-7881B74BE935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Interfaces", "Calculator.Interfaces\Calculator.Interfaces.csproj", "{88764D03-9257-411B-B35C-450FF439A342}"
-EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 3
@@ -49,16 +47,6 @@ Global
 		{BE726AB5-1A85-4D32-9FCB-7881B74BE935}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{BE726AB5-1A85-4D32-9FCB-7881B74BE935}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{BE726AB5-1A85-4D32-9FCB-7881B74BE935}.Release|x86.ActiveCfg = Release|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{88764D03-9257-411B-B35C-450FF439A342}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

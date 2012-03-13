@@ -65,6 +65,7 @@ namespace Calculator.UI
             {
                 Button btnSender = (Button)sender;
 
+                lblOperator.Text = oCalculator.SetOperatorByLetter(btnSender.Name[3]);
             }
         }
 

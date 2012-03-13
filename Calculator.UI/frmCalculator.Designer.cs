@@ -50,6 +50,7 @@
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnSign = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
+            this.lblOperator = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBack
@@ -126,6 +127,7 @@
             this.btnDivide.TabIndex = 6;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnOperatorClicked);
             // 
             // btnSqrt
             // 
@@ -154,6 +156,7 @@
             this.btnMult.TabIndex = 11;
             this.btnMult.Text = "*";
             this.btnMult.UseVisualStyleBackColor = true;
+            this.btnMult.Click += new System.EventHandler(this.btnOperatorClicked);
             // 
             // btn6
             // 
@@ -204,6 +207,7 @@
             this.btnSubtract.TabIndex = 16;
             this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = true;
+            this.btnSubtract.Click += new System.EventHandler(this.btnOperatorClicked);
             // 
             // btn3
             // 
@@ -244,6 +248,7 @@
             this.btnAdd.TabIndex = 21;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnOperatorClicked);
             // 
             // btnDecimal
             // 
@@ -274,12 +279,22 @@
             this.btn0.UseVisualStyleBackColor = true;
             this.btn0.Click += new System.EventHandler(this.btnNumberClicked);
             // 
+            // lblOperator
+            // 
+            this.lblOperator.AutoSize = true;
+            this.lblOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOperator.Location = new System.Drawing.Point(21, 17);
+            this.lblOperator.Name = "lblOperator";
+            this.lblOperator.Size = new System.Drawing.Size(0, 20);
+            this.lblOperator.TabIndex = 22;
+            // 
             // frmCalculator
             // 
             this.AcceptButton = this.btnEqual;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(260, 274);
+            this.Controls.Add(this.lblOperator);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnSign);
@@ -307,6 +322,7 @@
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.frmCalculator_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -334,6 +350,7 @@
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnSign;
         private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Label lblOperator;
     }
 }
 
