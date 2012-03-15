@@ -137,6 +137,7 @@
             this.btnSqrt.TabIndex = 7;
             this.btnSqrt.Text = "sqrt";
             this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSqrt.Click += new System.EventHandler(this.btnOperatorClicked);
             // 
             // btnInverse
             // 
@@ -146,6 +147,7 @@
             this.btnInverse.TabIndex = 12;
             this.btnInverse.Text = "1/X";
             this.btnInverse.UseVisualStyleBackColor = true;
+            this.btnInverse.Click += new System.EventHandler(this.btnOperatorClicked);
             // 
             // btnMult
             // 
@@ -197,6 +199,7 @@
             this.btnEqual.TabIndex = 17;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btnSubtract
             // 
@@ -268,6 +271,7 @@
             this.btnSign.TabIndex = 19;
             this.btnSign.Text = "+/-";
             this.btnSign.UseVisualStyleBackColor = true;
+            this.btnSign.Click += new System.EventHandler(this.btnOperatorClicked);
             // 
             // btn0
             // 
@@ -318,6 +322,7 @@
             this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.Name = "frmCalculator";
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.frmCalculator_Load);

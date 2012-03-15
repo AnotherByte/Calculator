@@ -21,7 +21,7 @@ namespace Calculator.UI
 
         private void frmCalculator_Load(object sender, EventArgs e)
         {
-            lblDisplay.Text = string.Empty;
+            lblDisplay.Text = "0";
             oCalculator = new CCalculator();
         }
 
@@ -35,6 +35,7 @@ namespace Calculator.UI
         private void btnClear_Click(object sender, EventArgs e)
         {
             lblDisplay.Text = oCalculator.Clear();
+            lblOperator.Text = string.Empty;
         }
 
 
@@ -45,29 +46,55 @@ namespace Calculator.UI
             {
                 Button btnSender = (Button)sender;
 
-                lblDisplay.Text = oCalculator.NumberKey(btnSender.Name[3]);
+                lblDisplay.Text = oCalculator.NumberKey(btnSender.Text).ToString();
             }
         }
         // decimal
         private void btnDecimal_Click(object sender, EventArgs e)
         {
-            if (oCalculator.DecUsed() == -1)
-            {
-                lblDisplay.Text = oCalculator.NumberKey('.');
-            }
+            lblDisplay.Text = oCalculator.DecimalKey().ToString();
         }
 
 
-        // +,-,*,/ operators
+        // operators
         private void btnOperatorClicked(object sender, EventArgs e)
         {
-            if (sender is Button)
+            try
             {
-                Button btnSender = (Button)sender;
+                if (sender is Button)
+                {
+                    Button btnSender = (Button)sender;
 
-                lblOperator.Text = oCalculator.SetOperatorByLetter(btnSender.Name[3]);
+                    if (oCalculator.SetOperator(btnSender.Text))
+                    {
+                        lblOperator.Text = oCalculator.Operator;
+                    }
+                    lblDisplay.Text = oCalculator.Number.ToString();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                oCalculator.Clear();
+                lblOperator.Text = string.Empty;
+                lblDisplay.Text = ex.Message;
             }
         }
 
+        // = key
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lblDisplay.Text = oCalculator.Calc(true).ToString();
+                lblOperator.Text = string.Empty;
+            }
+            catch (Exception ex)
+            {
+                oCalculator.Clear();
+                lblOperator.Text = string.Empty;
+                lblDisplay.Text = ex.Message;
+            }
+        }
     }
 }
